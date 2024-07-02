@@ -88,6 +88,17 @@ trait QueryBuilder
     }
 
     /**
+     * Set language code
+     * @param string $param Valid values: en, nl, ...
+     */
+    public function lang($param = null): self
+    {
+        $this->query['lang'] = $param ?? null;
+
+        return $this;
+    }
+
+    /**
      * Limit selection to photos matching a search term.
      * @param string $param
      */
