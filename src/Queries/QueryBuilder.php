@@ -88,7 +88,7 @@ trait QueryBuilder
     }
 
     /**
-     * Set language code
+     * Set language code 
      * @param string $param Valid values: en, nl, ...
      */
     public function lang($param = null): self
